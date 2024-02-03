@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwal2tp126rxa"
-path="res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+uid="uid://cmv3v7ihjhola"
+path="res://.godot/imported/placeholder_gubbe.svg-37330c7f13aa3967d6afec160a81d421.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.svg"
-dest_files=["res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"]
+source_file="res://Art/Sprites/placeholder_gubbe.svg"
+dest_files=["res://.godot/imported/placeholder_gubbe.svg-37330c7f13aa3967d6afec160a81d421.ctex"]
 
 [params]
 

@@ -1,11 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://bh6ti12i4yx32"]
+[gd_scene load_steps=5 format=3 uid="uid://bh6ti12i4yx32"]
 
-[ext_resource type="Script" path="res://Scenes/main.cs" id="1_lo45b"]
-[ext_resource type="Texture2D" uid="uid://dwal2tp126rxa" path="res://icon.svg" id="2_vgdf3"]
+[ext_resource type="Texture2D" uid="uid://cmv3v7ihjhola" path="res://Art/Sprites/placeholder_gubbe.svg" id="2_cxyjv"]
+[ext_resource type="Texture2D" uid="uid://bjjbh5cic77b" path="res://Art/Sprites/placeholder_logging_station.svg" id="3_x1q5e"]
+[ext_resource type="Script" path="res://Scripts/Gubbe.cs" id="4_5q1fc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v4pnu"]
+size = Vector2(100, 100)
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_lo45b")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(100, 350)
-texture = ExtResource("2_vgdf3")
+[node name="Gubbe" type="CharacterBody2D" parent="."]
+script = ExtResource("4_5q1fc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gubbe"]
+shape = SubResource("RectangleShape2D_v4pnu")
+
+[node name="Sprite2D" type="Sprite2D" parent="Gubbe"]
+texture = ExtResource("2_cxyjv")
+
+[node name="LoggingStation" type="Sprite2D" parent="."]
+position = Vector2(1072, 115)
+texture = ExtResource("3_x1q5e")
